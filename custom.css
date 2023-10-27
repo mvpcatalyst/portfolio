@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root:not([data-them=dark]){
+    --primary: #ef8535;
+    --box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    --primary-hover: #9b521a;
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(rgba(0,0,0,0)50%, #010f21), url('https://images.unsplash.com/photo-1581610186406-5f6e9f9edbc1?auto=format&fit=crop&q=80&w=1740&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -8,10 +16,14 @@ body{
     background-attachment: fixed;
 }
 .bg-pr{
-    background-color: #010f21;
+    background-color: #010f21b9;
 }
 .bg-white{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.299);
+}
+
+main .container-fluid{
+    padding: 40px 0;
 }
 
 
@@ -93,4 +105,29 @@ details[open] {
 details.about p{
     font-size: 100%;
     color: white;
+}
+
+header .grid{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .grid a{
+    /* button glow effect */
+    box-shadow: 0 0 10px 0 var(--primary) !important;
+    margin: 10px;
+    animation: glow 1s ease-in-out infinite;
+
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 0 var(--primary) !important;
+    }
+    50% {
+        box-shadow: 0 0 40px 0 var(--primary) !important;
+    }
+    100% {
+        box-shadow: 0 0 10px 0 var(--primary) !important;
+    }
 }
