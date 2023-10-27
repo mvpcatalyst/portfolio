@@ -26,6 +26,23 @@ main .container-fluid{
     padding: 40px 0;
 }
 
+img.thumbnail{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    padding: 5px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+img.thumbnail:hover{
+    padding: 0px;
+}
+#thumbnails p{
+    font-size: 70%;
+}
 
 article.gmp{
     backdrop-filter: blur(17px) saturate(112%);
