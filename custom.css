@@ -43,6 +43,9 @@ img.thumbnail:hover{
 #thumbnails p{
     font-size: 70%;
 }
+#thumbnails a{
+    margin-top: 10px;
+}
 
 article.gmp{
     backdrop-filter: blur(17px) saturate(112%);
